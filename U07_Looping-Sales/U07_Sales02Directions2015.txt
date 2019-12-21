@@ -1,0 +1,101 @@
+CIS 276 Introduction to C/C++ Programming
+Chuck Nelson   
+
+-----------------------------------------------------------------------
+Completed Project Instructions
+-----------------------------------------------------------------------
+(1) Staple all printout in order and bring to next class.
+(2) Post 5 files to the dropbox:
+   sales-record.txt (a data file)
+   sales-record2.txt (a data file)
+   sales-record3.txt (a data file)
+   Ex07_Sales02.cpp 
+   Ex07_Sales02.exe 
+
+-----------------------------------------------------------------------
+Overview
+-----------------------------------------------------------------------
+
+   Part #1: Input Data File Layout (all data files)
+
+   -----------------------------------------------------
+   Field                Data 
+   Name                 Type
+   -----------------------------------------------------
+   recordCode           int      (should always be 61)
+   salseRep             int      (sorted by this field)
+   dateOfSale           string   (mmddyy)
+   productCode          string   (5 characters)   
+   productDescription   string   (15 characters)
+   quantitySold         int      (>= 0)
+   unitPrice            double   (> 0 and <100)
+   -----------------------------------------------------
+
+   Part #2: Input Data File Format (Filename: sales-record.txt)
+   NOTE: #2 and #3 are similar but have fewer rows
+
+   61 10003 050714 TB001  Toothbrush      001 01.00
+   61 10003 051314 SB005  Bar_Soap        005 00.50
+   61 10005 050114 MP070  Kitchen_Mop     002 10.00
+   61 10006 050114 TB001  Tooth_Brush     004 01.00
+   61 10006 050714 TP002  Tooth_Paste     023 01.12
+   61 10006 050714 TP002  Mouthwash       013 00.98
+   61 10006 051614 SB005  Bar_Soap        001 00.50
+   61 10009 051914 SP008  Soap_Powder     238 01.89
+   61 10009 052514 WF080  Floor_Wax       005 02.98
+   -----------------------------------------------------
+
+-----------------------------------------------------------------------
+To Do
+-----------------------------------------------------------------------
+   Part #1: create a properly named project in the correct folder
+      Project Name:  Ex07_Sales02
+
+   Part #2: data file
+      Copy the data files to the project folder.
+
+   Part #3: complete the coding of the following source file
+      1. Ex07_Sales02.cpp           // read, print & grand totals
+ 
+
+
+
+-----------------------------------------------------------------------
+Sample Program Run of each of the five programs
+-----------------------------------------------------------------------
+
+NOTE: use DetailLinesGrandTotalS.cpp as your example program,
+   which is contained in the folder 15_GrandTotal
+   (NOTE: your name should replace the name Joe Blough below)
+/* -------------------------------------------------------------------- */
+
+
+
+My Store Sales Report
+by 
+Joe Blough
+
+Enter filename(like "SALES-RECORD.txt"): sales-record.txt
+
+-------------------------------------------------------------------------
+     Sales   Date of   Product  Product          Quantity Unit   Extended
+Code Rep     Sale      Code     Desc             Sold     Price  Price
+-------------------------------------------------------------------------
+ 61  10003   05-07-14  TB001    Toothbrush          1      1.00      1.00
+ 61  10003   05-13-14  SB005    Bar_Soap            5      0.50      2.50
+ 61  10005   05-01-14  MP070    Kitchen_Mop         2     10.00     20.00
+ 61  10006   05-01-14  TB001    Tooth_Brush         4      1.00      4.00
+ 61  10006   05-07-14  TP002    Tooth_Paste        23      1.12     25.76
+ 61  10006   05-07-14  TP002    Mouthwash          13      0.98     12.74
+ 61  10006   05-16-14  SB005    Bar_Soap            1      0.50      0.50
+ 61  10009   05-19-14  SP008    Soap_Powder       238      1.89    449.82
+ 61  10009   05-25-14  WF080    Floor_Wax           5      2.98     14.90
+
+                                                   Grand Total:    531.22 *
+
+Run program again(y/n)? y
+
+Enter filename("SALES-RECORD.txt"): sales-record2.txt
+
+/* -------------------------------------------------------------------- */
+
